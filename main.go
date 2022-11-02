@@ -16,13 +16,11 @@ func pomodoroTimer() {
     os.Exit(3)
   }
 
-  ticker := time.NewTicker(1 * time.Second)
   for duration > 0 {
       fmt.Println("time left:", duration, "minute(s)")
       time.Sleep(1 * time.Minute)
       duration-- 
     }
-  ticker.Stop()
   fmt.Println("Time up!")
 }
 
